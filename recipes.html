@@ -140,7 +140,7 @@
                 - #FILTER BAR
              -->
 
-            <div class="filter-bar">
+            <div class="filter-bar" data-filter-bar>
 
                 <div class="title-wrapper">
 
@@ -148,7 +148,7 @@
 
                     <p class="title-medium">Filters</p>
 
-                    <button class="close-btn has-state" aria-label="Close filter bar" data-filter-toggler>
+                    <button class="icon-btn close-btn has-state" aria-label="Close filter bar" data-filter-toggler>
                         <span class="material-symbols-outlined" aria-hidden="true">close</span>
                     </button>
 
@@ -1069,12 +1069,15 @@
                     </button>
 
                     <button class="btn btn-primary label-large " data-filter-submit data-filter-toggler="">
-                        Clear
+                        Apply
                     </button>
 
                 </div>
 
             </div>
+
+            <div class="overlay" data-overlay data-filter-toggler></div>
+
 
         </article>
     </main>
