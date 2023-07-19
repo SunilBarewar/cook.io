@@ -114,7 +114,7 @@ const addTabContent = function ($currentTabBtn, $currentTabPanel) {
             const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
 
             const /** {undefined | String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
-            console.log(isSaved)
+            // console.log(isSaved)
             const /** {NodeElement} */ $card = document.createElement("div");
 
             $card.classList.add("card");
@@ -186,7 +186,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
 
             <div class="slider">
 
-                <ul class="slider-wrapper data-slider-wrapper>
+                <ul class="slider-wrapper" data-slider-wrapper>
                     ${`<li class="slider-item">${$skeletonCard}</li>`.repeat(10)}
                 </ul>
 
@@ -197,7 +197,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
     const /** {NodeElement} */ $sliderWrapper = $sliderSection.querySelector("[data-slider-wrapper]");
 
     fetchData([...cardQueries, ["cuisineType", cuisineType[index]]], function (data) {
-
+        $sliderWrapper.innerHTML = "";
         data.hits.map(item => {
             const {
                 recipe: {
@@ -212,6 +212,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
             const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
 
             const /** {undefined | String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
+
 
 
             const /** {NodeElement} */ $sliderItem = document.createElement("li");
