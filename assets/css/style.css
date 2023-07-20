@@ -1619,19 +1619,21 @@ main {
     grid-template-columns: 1fr min-content;
     align-items: center;
     padding-inline: 24px;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .navbar-link.active {
     opacity: 1;
   }
 
-  .navbar.active::before {
+  .navbar-link.active::before {
     content: "";
-    order: 1;
+    position: absolute;
+    bottom: 0;
     height: 3px;
     background-color: var(--primary);
     border-radius: var(--radius-pill) var(--radius-pill) 0 0;
+    width: 100%;
   }
 
   /**
