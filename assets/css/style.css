@@ -1797,10 +1797,6 @@ main {
     overflow-y: auto;
   }
 
-  .filter-content .search-wrapper {
-    padding-block-start: 0;
-  }
-
   .recipe-page {
     position: relative;
     display: flex;
