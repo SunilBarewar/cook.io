@@ -1672,7 +1672,7 @@ main {
 
     /* font size */
 
-    --fs-display-large: 576rem;
+    --fs-display-large: 5.7rem;
     --fs-display-medium: 4.5rem;
     --fs-display-small: 3.6rem;
 
@@ -1720,7 +1720,7 @@ main {
   }
 
   .banner-card {
-    background-image: url("../images/hero-banner-large.jpg");
+    background-image: url('../images/hero-banner-large.jpg');
   }
 
   .banner-card>.label-medium {
@@ -1840,8 +1840,6 @@ main {
   }
 
 }
-
-
 
 
 /**
