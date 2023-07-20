@@ -62,8 +62,8 @@ addEventOnElements($filterTogglers, "click", function () {
  * Filter submit and clear
  */
 
-const /** {NodeElement} */ $filterClear = document.querySelector("[data-filter-clear]");
-const /** {NodeElement} */ $filterSubmit = document.querySelector("[data-filter-submit]");
+const /** {NodeElement} */ $filterClear = $filterBar.querySelector("[data-filter-clear]");
+const /** {NodeElement} */ $filterSubmit = $filterBar.querySelector("[data-filter-submit]");
 const /** {NodeElement} */ $filterSearch = $filterBar.querySelector("input[type='search']");
 
 $filterSubmit.addEventListener("click", function () {
@@ -255,7 +255,7 @@ window.addEventListener("scroll", async e => {
         requestedBefore = false;
     }
 
-    if (!nextPageUrl) $loadMore.innerHTML = ` <p class="bidy-medium info-text"> No recipe found. </p>`
+    if (!nextPageUrl) $loadMore.innerHTML = ` <p class="body-medium info-text"> No recipe found. </p>`
 });
 
 

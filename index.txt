@@ -596,6 +596,8 @@ Cook.io
 Restaurant-Style Pan Seared Salmon
 
 <span class="material-symbols-outlined" aria-hidden="true">bookmark_add</span>
+
+<span class="material-symbols-outlined" aria-hidden="true">bookmark</span>
 Save
 
 by Jenn Segal
@@ -621,3 +623,14 @@ for 6 Servings
 2 1/2 pounds skirt steak or sirloin flap steak
 
 Accompaniments: homemade burger buns ; homemade ketchup ; homemade mustard ; homemade pickle relish ; lettuce and tomato
+
+
+
+
+['q', 'pizza']
+['time', '20-30']
+['ingr', '5']
+['health', 'egg-free']
+['mealType', 'breakfast']
+['dishType', 'biscuits and cookies']
+['cuisineType', 'caribbean']

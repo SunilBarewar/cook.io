@@ -302,7 +302,6 @@ main {
   font-weight: var(--weight-small);
   line-height: 20px;
   letter-spacing: 0.1px;
-
 }
 
 .body-large {
@@ -608,7 +607,7 @@ main {
   max-width: max-content;
   padding-inline: 16px;
   display: grid;
-  place-items: center;
+  place-content: center;
   gap: 8px;
 }
 

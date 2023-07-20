@@ -57,7 +57,7 @@ window.saveRecipe = function (element, recipeId) {
     if (!isSaved) {
         fetchData(cardQueries, function (data) {
             window.localStorage.setItem(`cookio-recipe${recipeId}`, JSON.stringify(data));
-            console.log(data)
+            // console.log(data)
             element.classList.toggle("saved");
             element.classList.toggle("removed");
             showNotification("Added to Recipe book");
